@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="home-header text-center my-5">Який-небудь текст, можливо фото</div>
+    <div class="row posts-row">
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1 mt-2">
+            <div class="card work d-flex flex-column justify-content-center">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-3"><i class="fa-solid fa-briefcase fa-3x"></i></div>
+                        <div class="col-9"><h3>Робота</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1 mt-2">
+            <div class="card education d-flex flex-column justify-content-center">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-3"><i class="fa-solid fa-user-graduate fa-3x"></i></div>
+                        <div class="col-9"><h3>Навчання</h3></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1 mt-2">
+            <div class="card accommodation d-flex flex-column justify-content-center">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-3"><i class="fa-solid fa-house-chimney-window fa-3x"></i></div>
+                        <div class="col-9"><h3>Проживання</h3></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1 mt-2">
+            <div class="card health d-flex flex-column justify-content-center">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-3"><i class="fa-solid fa-suitcase-medical fa-3x"></i></div>
+                        <div class="col-9"><h3>Медицина</h3></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 py-1 mt-2">
+            <div class="card law d-flex flex-column justify-content-center">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-3"><i class="fa-solid fa-gavel fa-3x"></i></div>
+                        <div class="col-9"><h3>Законодавство</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
