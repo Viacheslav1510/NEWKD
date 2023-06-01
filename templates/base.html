@@ -70,19 +70,19 @@
                   {% else %}
                   <i class="fa-brands fa-napster text-white fa-2x"></i>
                   {% endif %}
-                </div>
-                <!-- Login Dropdown -->
-                <div class="dropdown-menu">
-                  {% if request.user.is_authenticated %}
-                  {% if request.user.is_superuser %}
-                  <a class="dropdown-item" href="">Add Product</a>
-                  {% endif %}
-                  <a href="" class="dropdown-item">Profile</a>
-                  <a href="" class="dropdown-item">Logout</a>
-                  {% else %}
-                  <a href="" class="dropdown-item">Register</a>
-                  <a href="" class="dropdown-item">Login</a>
-                  {% endif %}
+                  <!-- Login Dropdown -->
+                  <div class="dropdown-menu">
+                      {% if request.user.is_authenticated %}
+                      {% if request.user.is_superuser %}
+                      <a class="dropdown-item" href="">Add Product</a>
+                      {% endif %}
+                      <a href="" class="dropdown-item">Profile</a>
+                      <a href="" class="dropdown-item">Logout</a>
+                      {% else %}
+                      <a href="" class="dropdown-item">Register</a>
+                      <a href="" class="dropdown-item">Login</a>
+                      {% endif %}
+                    </div>
                 </div>
               </li>
             </ul>
