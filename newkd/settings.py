@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['newkd.herokuapp.com', 'localhost', '8000-viacheslav1510-newkd-1iofxe4d47y.ws-eu98.gitpod.io', '8000-viacheslav1510-newkd-2llxbql42sk.ws-eu98.gitpod.io']
+# Ask collaborators to add their host in the list below
+
+ALLOWED_HOSTS = ['newkd.herokuapp.com', 'localhost', '8000-dee68-newkd-7s83psa12zu.ws-eu98.gitpod.io', '8000-viacheslav1510-newkd-1iofxe4d47y.ws-eu98.gitpod.io', '8000-viacheslav1510-newkd-2llxbql42sk.ws-eu98.gitpod.io']
 
 
 # Application definition
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'home',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -80,16 +83,21 @@ WSGI_APPLICATION = 'newkd.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+# Perhaps better for all colloborators while building the project, 
+# so that each of us can do try outs locally before making pull requests.
+if DEBUG:
+    # development
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+else:
+    # production
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    }
 
 
 # Password validation
@@ -111,6 +119,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# AUTH_USER_MODEL = 'auth.User'
+AUTH_USER_MODEL = 'account.User'
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
