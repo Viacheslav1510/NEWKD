@@ -78,7 +78,7 @@ class Profile(models.Model):
         default=FEMALE,
         max_length=1
         )
-    age = models.PositiveSmallIntegerField()
+    age = models.IntegerField(default=14)
     address = models.CharField(max_length=100, blank=True, null=True)
     county = models.CharField(
         max_length=20,
