@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import View
-# from django.contrib import messages
+from django.contrib import messages
 from django.http import JsonResponse, HttpResponseRedirect
 from django.conf import settings
 from django.contrib.auth import (authenticate,
@@ -9,16 +9,16 @@ from django.contrib.auth import (authenticate,
                                  update_session_auth_hash
                                  )
 from django.contrib.auth.decorators import login_required
-# from django.utils.encoding import (force_bytes,
-#                                    force_text,
-#                                    DjangoUnicodeDecodeError
-#                                    )
-# from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-# from django.contrib.sites.shortcuts import get_current_site
-# from django.urls import reverse
-# from django.core.mail import send_mail
-# from django.utils.safestring import mark_safe
-# from django.utils.datastructures import MultiValueDictKeyError
+from django.utils.encoding import (force_bytes,
+                                   force_text,
+                                   DjangoUnicodeDecodeError
+                                   )
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.contrib.sites.shortcuts import get_current_site
+from django.urls import reverse
+from django.core.mail import send_mail
+from django.utils.safestring import mark_safe
+from django.utils.datastructures import MultiValueDictKeyError
 # from .utils import token_generator
 
 
