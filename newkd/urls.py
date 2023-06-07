@@ -24,4 +24,5 @@ urlpatterns = [
     path('healthcare/', include('health.urls')),
     path('law/', include('law.urls')),
     path('work/', include('work.urls')),
+    path('account/', include('account.urls', namespace='account')),
 ]
