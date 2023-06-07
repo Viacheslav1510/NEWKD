@@ -1,0 +1,83 @@
+.rm {
+    text-decoration: none!important;
+    color: #fff!important;
+}
+.title-lead1{
+    text-align: center;
+    color: #fff!important;
+}
+.title-lead1 {
+    font-size: 150%;
+}
+.alert {
+    text-align: center;
+}
+.logout {
+    border: 2px solid #1b6f70;
+    background-color: #59adaf;
+    box-shadow: 15px 10px 10px rgba(143, 227, 181, 0.5); 
+    
+}
+.dropdown-item {
+    color: #000!important;
+}
+h3 {
+    text-align: center;
+    color: #e1e6df;
+}
+.bg-primary {
+    background-color: #1c9a59!important;
+}
+.signup, .lgn {
+    color: #fff;
+    font-size: 140%;
+    border: 1px solid #47b686;
+    background-color: #000!important;
+}
+.signup:hover, .lgn:hover {
+    border: 1px solid #47b686;
+}
+.fa-solid {
+   color: #59adaf!important; 
+}
+span.bi {
+    color: #fff!important;
+}
+hr {
+    border: 1px solid #fff;
+}
+.btn-google {
+    color: white!important;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white!important;
+    background-color: #3b5998;
+  }
+  .btn-github {
+    color: #fff!important;
+    background-color: #000;
+  }
+  
+  .cfm {
+    color: #292F36!important;
+    border: 2px solid #0c7224;
+    background-color: #f1efec;
+}
+.cfm:hover {
+    color: #fff!important;
+    background-color: rgba(6, 63, 32, 0.9);
+    border: 2px solid #0c7224!important;
+}
+.kn {
+    display: flex;
+}
+
+h3.text-bl {
+    color: #000!important;
+  }
+
+  /* li > a {
+    color: #fff!important;
+  } */
